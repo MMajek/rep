@@ -2,8 +2,12 @@ body {
     font-size: 16px;
     margin: auto;
     padding-top: 10px;
-    letter-spacing: 0px;
-    background-color: rgb(218, 218, 218);
+    background-size: 2000px 1000px;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-image: url('vm_gameBackground.png');
+    overflow: hidden;
 }
 
 h2#intro{
@@ -19,6 +23,6 @@ h2#intro{
 }
 .object {
     position: fixed;
-    bottom:15%;
+    bottom:15.6%;
     left: 45%;
 }
