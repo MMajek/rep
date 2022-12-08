@@ -1,3 +1,6 @@
+:root {
+    --mycolor: red;
+}
 body {
     font-size: 16px;
     margin: auto;
@@ -49,7 +52,8 @@ p#error-msg {
     position: fixed;
     top: 44%;
     left: 47%;
-    color: red;
+    /* var(--mycolor) is the use of variables in css.  */
+    color: var(--mycolor); 
     font-weight: bolder;
     letter-spacing: 2px;
 }
@@ -83,3 +87,12 @@ p#error-msg {
     width: auto;
 }
 
+/* We can create adaptive rules for example: 
+this exampl below changes font size and color as the page surpases the max-width of 400px */
+@media (max-width: 1400px) {
+    body{
+    background-image: url('vm_gameBackground.png');
+    font-size: small;
+    font-style: italic;
+    }
+}
