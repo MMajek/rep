@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="dragonSelectorPage.css">
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+</head>
+<body>
+    <div id="space"></div>
+    <h3 class="intro"> Now it's time to:  </h3>
+    <h2 class="intro">Select Your Dragon... </h2>
+    <a href="index.html" style="text-decoration: none;" ><i title="Press To Go To Home." class='fa fa-home' id="homeButton"></i></a>
+    <hr>
+    <div class="dragonContainer">
+        <a href="game.html"  class="img_link"><img src="Dragon_01.svg.svg" id="dragon_01" class="dragonImg" alt="Green Dragon SVG" onclick="getSelectedColor('green')"></a>
+        <a href="game.html" class="img_link"><img src="Dragon_02.svg.svg" id="dragon_02" class="dragonImg" alt="Red Dragon SVG" onclick="getSelectedColor('red')"></a>
+        <a href="game.html" class="img_link"><img src="Dragon_03.svg.svg" id="dragon_03" class="dragonImg" alt="Purple Dragon SVG" onclick="getSelectedColor('purple')"></a>
+    </div>
+
+    <h4 id="psMessage" class="intro"><i class="bigger">PS: </i>Pick Wisely! This <b class="bigger">CANNOT</b> be changed.</h3>
+<script src="dragonSelectorPage.js"></script>
+</html>
