@@ -12,14 +12,18 @@ body {
     background-image: url('https://i.pinimg.com/originals/bc/24/b2/bc24b2dd54aeb8d2cb19593a6fef29f0.gif');
     font-size: 15px;
     overflow: hidden;
+    text-align: center;
+}
+.img_link {
+    display: none;
 }
 h2#namePage_title{
     font-size: 55px;
     position: fixed;
-    top: 35%;
-    left: 24%;
+    top: 30%;
+    right: 18%;
     text-align: center;
-    background: -webkit-linear-gradient(rgb(176, 6, 176), rgb(77, 181, 209), rgb(3, 72, 162));
+    background: -webkit-linear-gradient(rgb(216, 246, 254), rgb(3, 72, 162));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     font-family: 'Press Start 2P';
@@ -91,7 +95,7 @@ p#error-msg {
 this exampl below changes font size and color as the page surpases the max-width of 400px */
 @media (max-width: 1400px) {
     body{
-    background-image: url('vm_gameBackground.png');
+    background-image: url('dragonSelectorPage.png');
     font-size: small;
     font-style: italic;
     }
