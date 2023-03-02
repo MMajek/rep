@@ -1,0 +1,12 @@
+body {
+    font-size: 16px;
+    margin: auto;
+    padding-top: 10px;
+    background-size: 2000px 1000px;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-color: rgb(11, 11, 208);
+    background-image: url('dragonSelectorPage.png');
+    overflow: hidden;
+}
