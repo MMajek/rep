@@ -66,6 +66,7 @@ h2.intro {
     height:200px;
     margin: 40px;
     border: 5px solid rgb(47, 47, 131);
+    transition: 1s ease;
 }
 .bigger 
 {
@@ -84,6 +85,7 @@ h2.intro {
     top: 40%;
     right: 23%;
     display: flex;
+
 }
 
 /*When the height becomes less than 700px this script section changes feature sof the page.   */
