@@ -10,3 +10,114 @@ body {
     background-image: url('dragonSelectorPage.png');
     overflow: hidden;
 }
+#svg_container {
+    position: absolute;
+    top: 65.6%;
+    left: 0;
+    margin: auto;
+    transition: .25s ease;
+}
+.main-health-class {
+    position: fixed;
+    top: 8%;
+    left: 18%;
+}
+#dragon_health_title {
+    position: fixed;
+    left: 11%;
+    font-size: 30px;
+    font-weight: bolder;
+    background: -webkit-linear-gradient(rgb(180, 142, 227), rgb(102, 2, 201));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: 'Press Start 2P';
+}
+#dragon_information {
+    width: 700px;
+    height: 50px;
+    position: fixed;
+    left: 2%;
+    top: 23%;
+    display: flex;
+    justify-content: space-evenly;
+    border: 3px solid grey;
+    border-radius: 19px;
+    padding: 0px 5px 0px 5px;
+
+}
+.pet_actions {
+    position: fixed;
+    right: 3%;
+    top: 5%;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 10px 0px 40px rgb(16, 16, 48);
+    width: 40%;
+    height:25%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    border-radius: 1%;
+}
+.action_class {
+    margin-left:8px ;
+    display: flex;
+    justify-content: space-around;
+}
+.health-bar, .overall-health-bar {
+    margin-top: 10px;
+    height: 23px;
+    width: 410px;
+    border: 1px solid black;
+    background-image: linear-gradient(to right, rgb(248, 248, 248) ,rgba(248, 248, 248, 0.817));
+    border-radius: 20px;
+}
+.action_class button {
+    background-image: linear-gradient(to bottom right, rgb(0, 187, 255), rgb(25, 0, 255));
+    border-radius: 35px;
+    text-align: center;
+    width: 30%;
+    transition: width .5s;
+}
+.overall-health-bar {
+    position: fixed;
+    width: 600px;
+    height: 30px;
+    top: 15%;
+    left: 5%;
+
+}
+#homeButton {
+    position: fixed;
+    left: 1%;
+    top: 2%;
+    border: 4px solid blue;
+    border-radius: 100%;
+    padding: 7px;
+    font-size: 40px;
+    font-weight: bolder;
+    transition: ease .5s;
+}
+#homeButton:hover {
+    font-size: 50px;
+}
+
+.health-bar-progress, .overall-health-bar-progress {
+    text-align: center;
+    text-decoration: bolder;
+    padding-top: .5px;
+    height: 20.9px;
+    color: black;
+    background-image: linear-gradient(to right, rgb(6, 228, 6) , rgb(2, 201, 32),rgba(4, 145, 25, 0.817));
+    border-radius: 20px;
+    transition: .5s ease .3s;
+}
+.overall-health-bar-progress {
+    width: 20%;
+    height: 28px;
+
+}
+.action_class button:hover {
+    border: none;
+    background-image: linear-gradient(to bottom right, rgb(255, 66, 66), rgb(255, 0, 0));
+    width:33%;
+}
