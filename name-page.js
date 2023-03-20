@@ -22,7 +22,13 @@ input.addEventListener('input', () => {
         input.style = 'border: 2px solid lightgreen;'
     }
 })
-
+let name = "N/A";
+const submitName = document.querySelector("#nameButton");
+submitName.addEventListener('click', getName);
+function getName() {
+    let name = input.value;
+    alert(name);
+}
 // submitButton.addEventListener('click', () => {
 //     const usernameInput = document.querySelector('#nameInput').value;
 //     console.log(usernameInput);

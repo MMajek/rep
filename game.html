@@ -13,26 +13,35 @@
     <a href="index.html" style="text-decoration: none;" ><i title="Press To Go To Home." class='fa fa-home' id="homeButton"></i></a>
     <div class="main-health-class">
         <h2 id="dragon_health_title">Overall Health:</h2>
-        <div class="overall-health-bar"><div class="overall-health-bar-progress" id="overall-health">27%</div></div>
+        <div class="overall-health-bar"><div class="overall-health-bar-progress" id="overall-health">38%</div></div>
     </div>
-    <div id="dragon_information"></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
+    <div id="dragon_information">
+        <div>
+            <p id="name_param" class="info">Name:  </p>
+        </div>
+        <div>
+            <p id="age_param" class="info">Age: 0</p>
+        </div>
+        <div>
+            <p id="skin_param" class="info">Skin Color:   </p>
+        </div>
+        <div>
+            <p id="dob_param" class="info">DOB:   </p>
+        </div>
     </div>
     <div class="pet_actions">
+        <p id="action-msg"><u>> Over Doing WILL Reduce Your Pet's Health!!! <</u></p>
         <div class="action_class" id="action_01">
             <button id="feedButton" class="btn btn-primary">Feed Me</button>
             <div class="health-bar"><div class="health-bar-progress" id="health_01">10%</div></div>
         </div>
         <div class="action_class" id="action_02">
             <button id="playButton" class="btn btn-primary">Play Around</button>
-            <div class="health-bar"><div class="health-bar-progress" id="health_02"></div></div>
+            <div class="health-bar"><div class="health-bar-progress" id="health_02">50%</div></div>
         </div>
         <div class="action_class" id="action_03">
             <button id="drinkButton" class="btn btn-primary">Drink Water</button>
-            <div class="health-bar"><div class="health-bar-progress" id="health_03">20%</div></div>
+            <div class="health-bar"><div class="health-bar-progress" id="health_03">30%</div></div>
         </div>
         <div class="action_class" id="action_04">
             <button id="sleepButton" class="btn btn-primary">Sleep</button>
@@ -43,5 +52,5 @@
         <circle id="dragon"r="80" cx="90" cy="90" fill="purple" stroke="black"></circle>
     </svg>
 </body>
-<script src="game.js"></script>
+<script src="game.js" type="module"></script>
 </html>

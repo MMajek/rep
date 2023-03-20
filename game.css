@@ -32,31 +32,55 @@ body {
     -webkit-text-fill-color: transparent;
     font-family: 'Press Start 2P';
 }
-#dragon_information {
-    width: 700px;
-    height: 50px;
-    position: fixed;
-    left: 2%;
-    top: 23%;
-    display: flex;
-    justify-content: space-evenly;
-    border: 3px solid grey;
-    border-radius: 19px;
-    padding: 0px 5px 0px 5px;
-
-}
-.pet_actions {
+.pet_actions, #dragon_information {
+    text-align: center;
     position: fixed;
     right: 3%;
     top: 5%;
     background-color: rgb(255, 255, 255);
     box-shadow: 10px 0px 40px rgb(16, 16, 48);
     width: 40%;
-    height:25%;
+    height:27%;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: space-evenly;
     border-radius: 1%;
+}
+#dragon_information p{
+    position: relative;
+    background: -webkit-linear-gradient(rgb(180, 142, 227), rgb(102, 2, 201));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: 'Press Start 2P';
+    font-size: 12px;
+    margin-top: 6px;
+    transition:  ease .3s;
+}
+#dragon_information p:hover {
+    background: -webkit-linear-gradient(rgb(121, 136, 237), rgb(2, 35, 201));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 17px;
+}
+#dragon_information {
+    text-align: left;
+    flex-direction: row;
+    width: 710px;
+    height: 50px;
+    left: 1%;
+    top: 23%;
+    border-radius: 19px;
+    padding: 12px 1px 0px 1px;
+    box-shadow: none;
+
+
+}
+#action-msg {
+    background: -webkit-linear-gradient(rgb(237, 121, 121), rgb(201, 2, 2));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: 'Press Start 2P';
+    font-size: 13px;
 }
 .action_class {
     margin-left:8px ;
@@ -107,14 +131,20 @@ body {
     padding-top: .5px;
     height: 20.9px;
     color: black;
-    background-image: linear-gradient(to right, rgb(6, 228, 6) , rgb(2, 201, 32),rgba(4, 145, 25, 0.817));
+    background-image: linear-gradient(to right, rgb(254, 57, 57), rgb(149, 1, 1));
     border-radius: 20px;
     transition: .5s ease .3s;
 }
 .overall-health-bar-progress {
-    width: 20%;
+    width: 39%;
     height: 28px;
 
+}
+#health_02 {
+    background-image: linear-gradient(to right, rgb(225, 154, 0),rgb(141, 88, 2));
+}
+#health_04 {
+    background-image: linear-gradient(to right, rgb(0, 225, 15),rgb(0, 129, 13));
 }
 .action_class button:hover {
     border: none;
